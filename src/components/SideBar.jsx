@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
 import { categories } from "../utils/constants";
-import { Category } from "@mui/icons-material";
 
 const SideBar = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
@@ -18,7 +17,7 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => (
           background: category.name === selectedCategory && "#FC1503",
           color: "white",
         }}
-        key={category.name} 
+        key={category.name}
         onClick={() => {
           setSelectedCategory(category.name);
         }}
@@ -37,8 +36,7 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => (
           {category.name}
         </span>
       </button>
-    ))    
-    }
+    ))}
   </Stack>
 );
 

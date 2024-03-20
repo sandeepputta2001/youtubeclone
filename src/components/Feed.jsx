@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { BorderRight } from "@mui/icons-material";
 
 import SideBar from "./SideBar";
 import Videos from "./Videos";
@@ -51,7 +50,7 @@ const Feed = () => {
           fontWeight="bold"
           mb={2}
           sx={{ color: "white" }}
-        >
+         >
           {selectedCategory} <span style={{ color: "#f31503" }}>videos</span>
         </Typography>
         <Videos videos={videos} />

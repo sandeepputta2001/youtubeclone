@@ -7,9 +7,13 @@ import { logo } from "../utils/constants";
 const Navbar = () => (
   <Stack
     direction="row"
-    alignItems="center"
-    sx={{ position: "sticky", color: "#000", justifyContent: "space-between" }}
-   >
+    alignItems="flex-start"
+    sx={{
+      position: "sticky",
+      color: "#000",
+      justifyContent: "space-between",
+    }}
+  >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} style={{ margin: "13px" }} />
     </Link>
